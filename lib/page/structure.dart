@@ -8,7 +8,7 @@ import 'startpage.dart';
 import '../index/setting.dart';
 
 //지정
-String url = 'https://github.com/0xcplus/Oslar/';
+String url = 'https://github.com/0xcplus/Suho/';
 Color infLinkColor = const Color.fromARGB(255, 126, 141, 134);
 
 //페이지 구성

@@ -27,6 +27,8 @@ Future<void> main() async{
   runApp(const MyApp());
 }
 
+//package.json 관련 오류 해결해야할 듯.
+
 //favicon.png
 Future<String> fetchApiKey() async {
   final response = await http.get(Uri.parse('https://solar-liart.vercel.app/api/getApiKey'));
@@ -45,7 +47,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Oslar',
+      title: 'Suho',
 
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
