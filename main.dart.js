@@ -62576,7 +62576,7 @@ throw A.e(new A.F0(m,a,new A.oZ(o,c,n)))},
 Dv(a){this.a0T("expected "+a+".",0,this.c)}}
 A.Cx.prototype={
 R(a){var s=null
-return new A.te(B.vC,"Oslar",A.abd(s,A.adr(B.N,s,s,B.xK).a_W(B.y1,B.i,B.i,B.y6,B.n,B.xL,B.xR,B.y4),A.a1c(A.pJ(B.dv,B.e,22,B.l),s,s,s,s,s,s,s,s,s,s,s,s,s,s),!1),s)}}
+return new A.te(B.vC,"Suho",A.abd(s,A.adr(B.N,s,s,B.xK).a_W(B.y1,B.i,B.i,B.y6,B.n,B.xL,B.xR,B.y4),A.a1c(A.pJ(B.dv,B.e,22,B.l),s,s,s,s,s,s,s,s,s,s,s,s,s,s),!1),s)}}
 A.nu.prototype={
 ag(){return new A.HL()}}
 A.HL.prototype={
@@ -62600,7 +62600,7 @@ r=m.d
 q=t.sq
 p=A.P2(l,B.xh,B.J,l,new A.dh(l,l,l,l,A.b([A.aiu(8,5)],q),l,B.cq),l,l,l,l,l,l,l)
 o=A.jY("Suho",A.pJ(B.xA,B.e,27,B.bp))
-n=A.Ct(A.rx(l,A.jY("https://github.com/0xcplus/Oslar/",A.pJ($.ac8,B.uK,20,B.l)),B.ax,!1,l,l,l,l,l,l,l,l,l,l,l,l,new A.a2J(),l,l,l),B.bJ,new A.a2K(m),new A.a2L(m),l)
+n=A.Ct(A.rx(l,A.jY("https://github.com/0xcplus/Suho/",A.pJ($.ac8,B.uK,20,B.l)),B.ax,!1,l,l,l,l,l,l,l,l,l,l,l,l,new A.a2J(),l,l,l),B.bJ,new A.a2K(m),new A.a2L(m),l)
 n=A.b([new A.vC(new A.dh(B.xN,l,l,B.vI,A.b([A.aiu(5,3)],q),l,B.b1),p,o,n,l),A.aaA(B.zv,new A.a2M(m,a),A.jY("\ud648",A.pJ(B.dv,B.e,22,B.l)),B.fD),A.aaA(B.zu,new A.a2N(m,a),A.jY("\ucc44\ud305",A.pJ(B.dv,B.e,22,B.l)),B.fD),A.aaA(B.zt,new A.a2O(m,a),A.jY("\uc124\uc815",A.pJ(B.dv,B.e,22,B.l)),B.fD)],t.F)
 o=A.aH([null,0],t.LO,t.S)
 return new A.ul(new A.q5(s,4,B.xD,!0,new A.Jj(l,l,1/0,56),l),r,new A.AQ(new A.C9(new A.a_Y(!0,!0,!0,n,o),l,B.bk,!1,l,l,B.vq,!1,l,4,B.ax,B.Fg,l,B.aw,B.af,l),l),l)}}
@@ -62622,7 +62622,7 @@ $S:0}
 A.a2J.prototype={
 $0(){var s=0,r=A.P(t.H)
 var $async$$0=A.Q(function(a,b){if(a===1)return A.M(b,r)
-while(true)switch(s){case 0:A.eD("https://github.com/0xcplus/Oslar/")
+while(true)switch(s){case 0:A.eD("https://github.com/0xcplus/Suho/")
 return A.N(null,r)}})
 return A.O($async$$0,r)},
 $S:28}
