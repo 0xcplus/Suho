@@ -10,7 +10,7 @@ import 'package:dart_openai/dart_openai.dart';
 //etc.
 import 'env/env.dart';
 import 'index/setting.dart';
-import 'page/structure.dart';
+import 'page/astart.dart';
 
 String errorFind = "";
 
@@ -18,7 +18,7 @@ Future<void> main() async{
   String apiKey;
   try { apiKey = await fetchApiKey(); }   //GitHub
   catch (e) {                             //Local(Web, Windows)
-    print('It could be not the GitHub Pages : $e');
+    print('This is not from GitHub Pages : $e');
     await dotenv.load(fileName: "assets/config/.env");
     apiKey = Env.apiKey;
   }

@@ -15,7 +15,7 @@ class _StartEventState extends State<StartEvent>{
       children: [
         Padding(
           padding: const EdgeInsets.all(10),
-          child: Text('hello!')
+          child: Text('This is the First page!')
         )
       ]
     );

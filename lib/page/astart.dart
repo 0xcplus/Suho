@@ -21,7 +21,7 @@ class BeginPage extends StatefulWidget {
 }
 
 class _BeginPageState extends State<BeginPage> {
-  Widget _selectedBody = HomeArea();
+  Widget _selectedBody = StartEvent(); //HomeArea();
 
   void _updateBody(Widget newBody){
     setState(() {
@@ -32,7 +32,84 @@ class _BeginPageState extends State<BeginPage> {
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      appBar: AppBar(
+      body: _selectedBody,
+      
+      bottomNavigationBar: BottomAppBar( 
+        child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          InkWell(
+            onTap: (){
+              _updateBody(HomeArea());
+                //Navigator.pop(context);
+            },
+            child: Container(
+              padding: EdgeInsets.all(30),
+              child: Icon(Icons.home),
+            ),
+          ),
+
+          InkWell(
+            onTap: (){
+              _updateBody(StartEvent());
+                //Navigator.pop(context);
+            },
+            child: Container(
+              padding: EdgeInsets.all(30),
+              child: Icon(Icons.star),
+            ),
+          ),
+
+          InkWell(
+            onTap: (){
+              _updateBody(SettingArea());
+                //Navigator.pop(context);
+            },
+            child: Container(
+              padding: EdgeInsets.all(30),
+              child: Icon(Icons.settings),
+            ),
+          ),
+
+          /*ListTile(
+              leading: const Icon(Icons.home),
+              title:Text('홈', style: initTextStyle()),
+              onTap:(){
+                _updateBody(HomeArea());
+                Navigator.pop(context);
+              },
+              trailing: const Icon(Icons.navigate_next),
+            ),
+
+            //채팅
+            ListTile(
+              leading: const Icon(Icons.chat),
+              title:Text('채팅', style: initTextStyle()),
+              onTap:(){
+                _updateBody(StartEvent());//MainArea());
+                Navigator.pop(context);
+              },
+              trailing: const Icon(Icons.navigate_next),
+            ),
+
+             //설정
+            ListTile(
+              leading: const Icon(Icons.settings),
+              title:Text('설정', style: initTextStyle()),
+              onTap:(){
+                _updateBody(SettingArea());
+                Navigator.pop(context);
+              },
+              trailing: const Icon(Icons.navigate_next),
+            ),*/
+        ]
+      )
+    )
+    );
+      
+      
+
+      /* appBar: AppBar(
         centerTitle: true,
         title: Text(
           widget.title,
@@ -152,6 +229,6 @@ class _BeginPageState extends State<BeginPage> {
           ],
         ),
       ),
-    );
+    */
   }
 }
