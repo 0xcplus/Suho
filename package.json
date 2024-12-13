@@ -1,5 +1,5 @@
 {
-  "name": "Suho",
+  "name": "suho",
   "version": "1.0.0",
   "description": "Suho, Application for You.",
   "main": "api/getApiKey.js",

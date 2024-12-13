@@ -1,6 +1,9 @@
 #OPENAI_API_KEY
 assets/config/.env
 
+#Data
+lib/function/decode.dart
+
 # Miscellaneous
 *.class
 *.log

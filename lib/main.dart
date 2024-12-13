@@ -1,45 +1,19 @@
 //flutter & dart
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'dart:convert';
 
 //openai
 import 'package:dart_openai/dart_openai.dart';
 
 //etc.
-import 'env/env.dart';
+import 'openai/apikeyfetch.dart';
 import 'index/setting.dart';
 import 'page/astart.dart';
 
-String errorFind = "";
-
-Future<void> main() async{
-  String apiKey;
-  try { apiKey = await fetchApiKey(); }   //GitHub
-  catch (e) {                             //Local(Web, Windows)
-    print('This is not from GitHub Pages : $e');
-    await dotenv.load(fileName: "assets/config/.env");
-    apiKey = Env.apiKey;
-  }
-
-  OpenAI.apiKey = apiKey;
+void main() async {
+  OpenAI.apiKey = await returnApiKey();
   runApp(const MyApp());
 }
-
 //package.json 관련 오류 해결해야할 듯.
-
-//favicon.png
-Future<String> fetchApiKey() async {
-  final response = await http.get(Uri.parse('https://solar-liart.vercel.app/api/getApiKey'));
-  
-  if (response.statusCode == 200) {
-    final jsonResponse = json.decode(response.body);
-    return jsonResponse['apiKey'];
-  } else {
-    throw Exception('Failed to load API key');
-  }
-}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
